@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Supplies Store</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .header {
+            background-color: #800080; /* Purple color */
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer {
+            background-color: #800080; /* Purple color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .button {
+            background-color: #800080; /* Purple color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .search-bar {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+
+        .search-label {
+            color: white;
+        }
+        
+        .product {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        
+        .art-supplies {
+            font-size: 28px; /* Increased font size */
+        }
+        
+        .social-icons {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .payment-options {
+            margin-top: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50; /* Green color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <span class="art-supplies">Art Supplies</span> <!-- Changed the font size and removed "Store" -->
+        </div>
+        <div>
+            <label for="search-bar" class="search-label">Search Product:</label>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+        </div>
+        <div>
+            <button class="button">Home</button>
+            <button class="button">Supplies</button>
+            <button class="button">Sign In</button>
+            <button class="button">Account</button>
+            <button class="button">Cart</button>
+        </div>
+    </div>
+    
+    <div class="product">
+        <h2>Oil Paint Set</h2>
+        <p>A set of 12 vibrant oil paint colors suitable for artists of all levels. Each tube contains 20ml of high-quality paint.</p>
+        <p>Price: $29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+        <h2>Watercolor Brushes</h2>
+        <p>A set of 5 watercolor brushes with different sizes and shapes, perfect for creating various brush strokes and effects.</p>
+        <p>Price: $12.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+        <h2>Sketchbook</h2>
+        <p>A spiral-bound sketchbook with 100 sheets of acid-free paper, suitable for sketching, drawing, and mixed media.</p>
+        <p>Price: $9.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="footer">
+        <ul class="social-icons">
+            <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
+        <div class="payment-options">
+            We accept: <img src="visa-icon.png" alt="Visa"> <img src="mastercard-icon.png" alt="Mastercard"> <img src="paypal-icon.png" alt="PayPal">
+        </div>
+        <p>&copy; 2024 Art Supplies Store. All rights reserved.</p>
+    </div>
+</body>
+</html>
